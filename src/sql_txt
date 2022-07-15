@@ -1,0 +1,108 @@
+CREATE TABLE customers
+(
+    id         SERIAL PRIMARY KEY,
+    email      VARCHAR(50),
+    first_name VARCHAR(50),
+    last_name  VARCHAR(50),
+    age        INT,
+    weight     INT
+);
+INSERT INTO customers(email, first_name, last_name, age, weight)
+VALUES ('nurbisak@gmail.com', 'Nurbek', 'ISAKOV', 38, 80);
+
+CREATE TABLE car
+(
+    id INT,
+    creat_year        VARCHAR(20),
+    model      VARCHAR(20),
+    colour    VARCHAR
+);
+INSERT INTO car(id, creat_year, model, colour)
+VALUES(1,20010,'Camry','black');
+
+CREATE TABLE kokboru
+(
+    team_name         VARCHAR,
+    area              VARCHAR,
+    general_manager   VARCHAR,
+    players       INT
+);
+INSERT INTO kokboru(team_name, area, general_manager, players)
+VALUES('alaman','batken','nurbek',15);
+
+
+
+CREATE TABLE devices
+(
+    entity   VARCHAR,
+    brand    VARCHAR,
+    price    INT,
+    model VARCHAR
+);
+INSERT INTO devices(entity, brand, price, model)
+VALUES('call','sony',45000,'sony_erikson');
+
+CREATE TABLE flowers
+(
+    type    VARCHAR,
+    color   VARCHAR,
+    country VARCHAR,
+    height  INT,
+    count   INT
+);
+INSERT INTO flowers(type, color, country, height, count)
+VALUES ('Rose', 'red', 'Kyrgyzstan', 7, 9);
+
+CREATE TABLE instructors
+(
+    ful_name VARCHAR,
+    region VARCHAR,
+    marital_status VARCHAR,
+    children INT,
+    student INT,
+    gender VARCHAR
+);
+INSERT INTO instructors(ful_name, region, marital_status, children, student, gender)
+VALUES ('Zamir_agay', 'Batken', 'Jurogu zanit', 5, 40, 'male');
+
+CREATE TABLE tennis_players
+(
+    full_name VARCHAR,
+    won INT,
+    singles INT,
+    davis_cups INT,
+    olympic_medals INT,
+    grand_slams INT
+);
+INSERT INTO tennis_players(full_name, won, singles, davis_cups, olympic_medals, grand_slams)
+VALUES('Nurbek',15,20,23,5,15);
+
+CREATE TABLE chemp_ligue
+(
+    host_country VARCHAR,
+   best_player VARCHAR,
+   red_card INT
+);
+INSERT INTO chemp_ligue(host_country, best_player, red_card)
+VALUES ('Bishkek','alykulov',0);
+
+CREATE TABLE mentor
+(
+    full_name VARCHAR,
+    marriage VARCHAR,
+    duration INT,
+    hobby VARCHAR
+);
+INSERT INTO mentor(full_name, marriage, duration, hobby)
+VALUES('Aijamal','planned',2020,'reading');
+
+CREATE TABLE Station
+(
+    company_name VARCHAR,
+    employees INT,
+    founded_year INT,
+    headquarters VARCHAR,
+    drive VARCHAR
+);
+INSERT INTO Station(company_name, employees, founded_year, headquarters, drive)
+VALUES('152 bus',15,1998,'Asanbai','Bishkek')
